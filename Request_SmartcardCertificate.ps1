@@ -26,7 +26,7 @@ Function Request_SmartcardCertificate {
     $PKCS10 = New-Object -ComObject X509Enrollment.CX509CertificateRequestPkcs10;
     
     # Initialize the request object using the smartcard certificate template info
-    $PKCS10.InitializeFromTemplateName(0x1,"TMSmartcardLogon-Remote");
+    $PKCS10.InitializeFromTemplateName(0x1,"SmartcardLogon");
     
     # Generate the key pair and sign the PKCS#10 File
     $PKCS10.Encode();
