@@ -8,10 +8,10 @@
     Generate a random password using openssl rand function. Generates random output utilizing the CSPRNG secure pseudo-random number generator. 
 
     .EXAMPLE
-    Query_DigiCertCertificate -PasswordLength 12
+    Generate_RandomPassword -PasswordLength 12
     
     .EXAMPLE
-    Query_DigiCertCertificate -PasswordLength 32
+    Generate_RandomPassword -PasswordLength 32
 
     .NOTES
     Author: Charles Hamby
